@@ -15,7 +15,7 @@ async def start(message: types.Message):
     start_buttons = ['🔪 Ножи', '🥊 Перчатки', '🔫 Снайперские винтовки']
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(*start_buttons)
-    
+
     await message.answer('Выберите категорию', reply_markup=keyboard)
     
 
